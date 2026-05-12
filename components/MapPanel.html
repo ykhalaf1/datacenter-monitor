@@ -1,0 +1,21 @@
+<!-- MAP + SIDEBAR -->
+<div class="main-grid">
+    <div class="panel">
+      <div class="panel-hd">
+        <span class="panel-title">Geographic Distribution — Capacity by State (MW)</span>
+        <span style="font-family:var(--mono);font-size:11px;color:var(--muted);">Hover dots for details</span>
+      </div>
+      <div class="panel-bd">
+        <div id="map-wrap">
+          <div class="map-tooltip" id="mtt"></div>
+        </div>
+        <div class="map-legend" id="map-legend">
+          <div class="ml-item"><div class="ml-dot" style="background:#00e5b4"></div>Operational</div>
+          <div class="ml-item"><div class="ml-dot" style="background:#ffb347"></div>Under Construction</div>
+          <div class="ml-item"><div class="ml-dot" style="background:#2d8fff"></div>Approved</div>
+          <div class="ml-item"><div class="ml-dot" style="background:#a78bfa"></div>Planned</div>
+          <div class="ml-item"><div class="ml-dot" style="background:#f472b6"></div>Proposed</div>
+          <div class="ml-item" style="margin-left:12px;font-size:10px;color:var(--muted)">● dot size = capacity</div>
+        </div>
+      </div>
+    </div>

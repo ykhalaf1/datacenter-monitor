@@ -1,0 +1,51 @@
+const STATUS_COLORS = {
+  "Operational": "#00e5b4",
+  "Under Construction": "#ffb347",
+  "Approved": "#2d8fff",
+  "Planned": "#a78bfa",
+  "Proposed": "#f472b6"
+};
+const BADGE_CLASS = {
+  "Operational": "b-operational",
+  "Under Construction": "b-construction",
+  "Approved": "b-approved",
+  "Planned": "b-planned",
+  "Proposed": "b-proposed"
+};
+const OP_COLORS = {
+  "OpenAI / Oracle": "#00e5b4",
+  "Amazon / AWS": "#FF9900",
+  "Microsoft": "#2d8fff",
+  "Meta": "#1877F2",
+  "Google": "#4285F4",
+  "xAI": "#888",
+  "Vantage Data Centers": "#f472b6",
+  "SoftBank / OpenAI": "#a78bfa",
+  "Anthropic / Fluidstack": "#ff5c5c",
+  "Hut 8": "#ffb347",
+  "Galaxy Digital / CoreWeave": "#e879f9",
+  "Related Digital / OpenAI": "#34d399",
+  "CleanArc": "#60a5fa",
+  "AWS": "#FF9900",
+  "Microsoft / Crusoe": "#38bdf8",
+  "TeraWulf / Fluidstack": "#818cf8",
+  "AVAIO Digital": "#fb923c",
+  "Creekstone Energy": "#4ade80",
+  "Joule Power": "#22d3ee",
+  "Fermi America": "#f87171",
+  "O'Leary Digital": "#c084fc",
+  "ExxonMobil / NextEra": "#facc15",
+  "Google / Westinghouse": "#86efac",
+  "IBM": "#6366f1",
+  "JLL / Undisclosed": "#94a3b8",
+  "ESS": "#2dd4bf",
+  "BluSky AI": "#67e8f9",
+  "OpenAI / DOE": "#a3e635",
+  "Vantage / Oracle": "#00e5b4",
+  "Microsoft / Meta / AWS": "#60a5fa",
+  "Nscale / Microsoft": "#818cf8",
+  "Summit Ridge": "#fbbf24",
+  "QTS": "#34d399",
+  "Energy Storage Solutions": "#22d3ee",
+  "Ranalli / Undisclosed": "#94a3b8"
+};
