@@ -18,7 +18,10 @@ function updateStats(filtered) {
     src.reduce((s, d) => s + (d.water_mgal || 0), 0)
   );
   document.getElementById("s-mw").textContent = filteredGW + "K";
-  document.getElementById("s-invest").textContent = "$" + filteredInvest + "B";
+  const investDisplay = filteredInvest >= 1000
+    ? '$' + (filteredInvest / 1000).toFixed(2).replace(/\.?0+$/, '') + 'T'
+    : '$' + filteredInvest + 'B';
+  document.getElementById('s-invest').textContent = investDisplay;
   document.getElementById("s-water").textContent =
     filteredWater >= 1000
       ? (filteredWater / 1000).toFixed(1) + "K"
