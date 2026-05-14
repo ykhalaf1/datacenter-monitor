@@ -349,9 +349,17 @@ tr.detail-row:hover td {
 }
 
 .detail-inner {
-  width: 100% !important;
-  max-width: none !important;
-  box-sizing: border-box !important;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  background: var(--bg3);
+  border-radius: 6px;
+  padding: 14px 16px;
+  font-family: var(--mono);
+  font-size: 12px;
+  min-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .detail-notes {
