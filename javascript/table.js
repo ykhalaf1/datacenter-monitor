@@ -10,7 +10,7 @@ function render() {
   document.getElementById("nbtn").disabled = page >= pages;
   const tb = document.getElementById("tbody");
   tb.innerHTML = "";
-  const colSpan = 12;
+  const colSpan = 14;
   slice.forEach((d) => {
     const bc = BADGE_CLASS[d.status] || "b-planned";
     const pueC = d.pue
