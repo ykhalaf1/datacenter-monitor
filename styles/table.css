@@ -342,3 +342,20 @@ tr.detail-row:hover td {
     font-size: 11px;
   }
 }
+
+/* Make expanded textbox stretch full width */
+.detail-row td {
+  width: 100% !important;
+}
+
+.detail-inner {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+.detail-notes {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
