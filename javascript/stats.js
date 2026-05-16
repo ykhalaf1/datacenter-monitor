@@ -35,7 +35,7 @@ function updateStats(filtered) {
     : "GW planned/operational";
   document.getElementById("s-invest-sub").textContent = filterLabel
     ? `$B committed: ${filterLabel}`
-    : "USD billion committed";
+    : "USD committed";
   document.getElementById("s-water-sub").textContent = filterLabel
     ? `Mgal/yr: ${filterLabel}`
     : "Mgal / year (filtered)";
