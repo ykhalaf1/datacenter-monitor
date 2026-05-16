@@ -167,7 +167,19 @@
           </div>
         </div>
         <div class="panel">
-          <div class="panel-hd"><span class="panel-title">Top States (Planned GW)</span></div>
+          <div class="panel-hd" style="display:flex;align-items:center;justify-content:space-between;">
+            <span class="panel-title" id="state-bars-title">Top States (Capacity GW)</span>
+            <div style="display:flex;align-items:center;gap:2px;">
+              <button id="sbars-prev" onclick="cycleStateBars(-1)" title="Previous metric"
+                style="background:none;border:1px solid var(--border2);border-radius:3px;color:var(--muted2);font-size:12px;width:22px;height:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.15s;line-height:1;"
+                onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'"
+                onmouseout="this.style.borderColor='var(--border2)';this.style.color='var(--muted2)'">&#8592;</button>
+              <button id="sbars-next" onclick="cycleStateBars(1)" title="Next metric"
+                style="background:none;border:1px solid var(--border2);border-radius:3px;color:var(--muted2);font-size:12px;width:22px;height:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.15s;line-height:1;"
+                onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'"
+                onmouseout="this.style.borderColor='var(--border2)';this.style.color='var(--muted2)'">&#8594;</button>
+            </div>
+          </div>
           <div class="panel-bd" style="padding:14px 16px;" id="state-bars"></div>
         </div>
       </div>
