@@ -116,15 +116,7 @@ function updateMap(filtered) {
           }</span></div>
           <div class="tt-row"><span>Initiative</span><span style="color:var(--purple)">${
             d.initiative
-          }</span></div>
-          ${
-            d.notes
-              ? `<div style="margin-top:8px;font-size:10px;color:var(--muted);line-height:1.5;border-top:1px solid var(--border);padding-top:6px">${d.notes.slice(
-                  0,
-                  120
-                )}${d.notes.length > 120 ? "…" : ""}</div>`
-              : ""
-          }`;
+          }</span></div>`;
         const box = document.getElementById("map-wrap").getBoundingClientRect();
         let tx = event.clientX - box.left + 12;
         let ty = event.clientY - box.top + 12;
