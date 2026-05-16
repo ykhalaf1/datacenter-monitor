@@ -204,45 +204,26 @@
       </div>
     </div>
    
-    <!-- TABLE -->
-    <div class="panel">
-      <div class="panel-hd">
-        <span class="panel-title">Project Directory</span>
-        <span class="row-count" id="row-count"></span>
-      </div>
-      <div style="padding:16px 18px 0;">
-        <div class="filter-bar">
-          <input type="text" id="search" placeholder="Search name, city, operator, initiative…">
-          <select id="f-state"><option value="">All States</option></select>
-          <select id="f-op"><option value="">All Operators</option></select>
-          <select id="f-type"><option value="">All Types</option></select>
+      <!-- ENV SCORE EXPLAINER — sits directly above Project Directory -->
+    <div style="background:var(--bg2);border:1px solid var(--border2);border-left:3px solid var(--accent);border-radius:var(--r);padding:14px 20px;margin-bottom:12px;">
+      <div style="margin-bottom:12px;">
+        <div style="font-family:var(--mono);font-size:10px;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">How the Environmental Impact Score Works</div>
+        <div style="font-size:12px;color:var(--muted2);line-height:1.75;">
+          Each facility is scored <strong style="color:var(--text)">0–100</strong> (lower = greener) across four factors:
+          <span style="color:#38b6e8;font-weight:600;">Water Usage</span> (35%) ·
+          <span style="color:var(--warn);font-weight:600;">Capacity (MW)</span> (30%) ·
+          <span style="color:#00c87a;font-weight:600;">Renewable Energy %</span> (20%) ·
+          <span style="color:var(--accent2);font-weight:600;">Power Usage Effectiveness</span> (15%).
+          Click the <em style="color:var(--text)">Environmental Impact</em> column header to sort by score.
         </div>
       </div>
-      <div class="tbl-wrap">
-        <table>
-          <thead><tr>
-            <th data-col="name">Facility Name</th>
-            <th data-col="env_score">Environmental Impact</th>
-            <th data-col="operator">Operator / Developer</th>
-            <th data-col="city">City</th>
-            <th data-col="state">State</th>
-            <th data-col="capacity_mw">Capacity (Megawatts)</th>
-            <th data-col="water_mgal">Water Usage (Million Gal/yr)</th>
-            <th data-col="investment_bn">Investment (Billion USD)</th>
-            <th data-col="status">Project Status</th>
-            <th data-col="type">Facility Type</th>
-            <th data-col="est_online">Estimated Online</th>
-            <th data-col="pue">Power Usage Effectiveness (PUE)</th>
-            <th data-col="renewable_pct">Renewable Energy %</th>
-            <th data-col="initiative">Program / Initiative</th>
-          </tr></thead>
-          <tbody id="tbody"></tbody>
-        </table>
-      </div>
-      <div class="paginate">
-        <button id="pbtn" onclick="page--; render()">← Prev</button>
-        <button id="nbtn" onclick="page++; render()">Next →</button>
-        <span class="page-info" id="pinfo"></span>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+        <span style="font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:0.07em;margin-right:2px;">SCALE →</span>
+        <span class="env-badge env-vlow">VERY LOW (&lt;20)</span>
+        <span class="env-badge env-low">LOW (&lt;40)</span>
+        <span class="env-badge env-med">MEDIUM (&lt;60)</span>
+        <span class="env-badge env-high">HIGH (&lt;78)</span>
+        <span class="env-badge env-vhigh">VERY HIGH (78+)</span>
       </div>
     </div>
    
