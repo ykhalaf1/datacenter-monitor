@@ -1,27 +1,4 @@
 <!DOCTYPE html>
-<!-- ============================================================
-  FILE: index.html
-  Entry point. In a multi-file setup this would import:
-    - styles/variables.css    (CSS custom properties / design tokens)
-    - styles/layout.css       (header, footer, page layout)
-    - styles/components.css   (panels, badges, stat cards, sidebar)
-    - styles/map.css          (map container, tooltip, legend)
-    - styles/table.css        (table, filter bar, pagination)
-    - styles/responsive.css   (media queries)
-    - data/projects.js        (the DATA array)
-    - js/config.js            (STATUS_COLORS, BADGE_CLASS, OP_COLORS)
-    - js/state.js             (activeStatuses, sortCol, page, etc.)
-    - js/filters.js           (getFiltered, filterRender, status btns)
-    - js/stats.js             (updateStats)
-    - js/sidebar.js           (buildCompanyList, buildStateBars)
-    - js/table.js             (render, sort listeners)
-    - js/map.js               (D3 map init, updateMap)
-    - js/clock.js             (updateClock, setInterval)
-  External libraries (CDN or local):
-    - D3.js v7
-    - TopoJSON v3
-    - Google Fonts (IBM Plex Sans / Mono)
-============================================================ -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,20 +30,8 @@
     </div>
   </header>
    
-   
-  <!-- ============================================================
-     FILE: index.html  (main page content starts here)
-     In a React/Vue setup this would be the <App> root component,
-     importing child components listed below.
-  ============================================================ -->
   <div class="wrap">
    
-    <!-- ============================================================
-         COMPONENT: components/StatusFilterBar.html / StatusFilterBar.jsx
-         Multi-select pill buttons for filtering by project status.
-         Reads from: js/config.js (status labels/colors)
-         Writes to:  js/state.js  (activeStatuses Set)
-    ============================================================ -->
     <!-- STATUS FILTER BAR -->
     <div class="status-bar">
       <span>STATUS:</span>
@@ -118,19 +83,6 @@
       </div>
     </div>
    
-    <!-- ============================================================
-         COMPONENT: components/StatCards.html / StatCards.jsx
-         Summary metric cards: total projects, operational count,
-         under-construction count, total capacity (GW), investment ($B).
-         Data source: js/stats.js → updateStats()
-    ============================================================ -->
-   
-    <!-- ============================================================
-         COMPONENT: components/MapPanel.html / MapPanel.jsx
-         Left panel: D3 choropleth US map + dot overlays.
-         Depends on: js/map.js, D3 v7, TopoJSON v3,
-                     cdn.jsdelivr.net/npm/us-atlas@3
-    ============================================================ -->
     <!-- MAP + SIDEBAR -->
     <div class="main-grid">
       <div class="panel">
@@ -153,12 +105,6 @@
         </div>
       </div>
    
-      <!-- ============================================================
-           COMPONENT: components/Sidebar.html / Sidebar.jsx
-           Right column: operator list (clickable filter) +
-           top-states-by-GW bar chart.
-           Data source: js/sidebar.js → buildCompanyList(), buildStateBars()
-      ============================================================ -->
       <div class="sidebar">
         <div class="panel">
           <div class="panel-hd"><span class="panel-title" id="operator-panel-title">Operator(s)</span></div>
@@ -184,14 +130,6 @@
         </div>
       </div>
     </div>
-   
-    <!-- ============================================================
-         COMPONENT: components/ProjectTable.html / ProjectTable.jsx
-         Full sortable, filterable, paginated project directory.
-         Depends on: js/table.js  → render(), sort listeners
-                     js/filters.js → getFiltered(), filterRender()
-                     data/projects.js → DATA array
-    ============================================================ -->
    
   <!-- ENV SCORE EXPLAINER — sits directly above Project Directory -->
     <div style="background:var(--bg2);border:1px solid var(--border2);border-left:3px solid var(--accent);border-radius:var(--r);padding:14px 20px;margin-bottom:12px;">
@@ -260,10 +198,6 @@
    
   </div>
    
-  <!-- ============================================================
-     COMPONENT: components/Footer.html  (or kept in index.html)
-     Formal footer: creator credit, contact links, disclaimer.
-  ============================================================ -->
   <footer>
     <div class="footer-top">
       <div class="footer-brand">
