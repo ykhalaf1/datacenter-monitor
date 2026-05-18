@@ -16,7 +16,6 @@ header {
   .live-dot { width:7px; height:7px; border-radius:50%; background:var(--accent); animation:pulse 2s infinite; }
   @keyframes pulse { 0%,100%{opacity:1;transform:scale(1);} 50%{opacity:0.4;transform:scale(0.85);} }
   .ts { font-family:var(--mono); font-size:11px; color:var(--muted); }
-  
-  /* ── PAGE WRAPPER (styles/layout.css continued) ── */
+
   .wrap { max-width:1440px; margin:0 auto; padding:24px 28px; }
   

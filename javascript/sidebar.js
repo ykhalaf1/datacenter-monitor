@@ -34,7 +34,6 @@ function buildCompanyList(filtered) {
   });
 }
  
-// ── buildStateBars (js/sidebar.js continued) ──
 // State bars metric modes: 0 = Capacity GW, 1 = Water Usage
 const SBARS_MODES = [
   { key: 'capacity_mw',  label: 'Top States (Capacity GW)',        unit: v => (v/1000).toFixed(2)+' GW',    color: 'var(--accent)',  scale: 1000 },
